@@ -1,0 +1,53 @@
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+#filtres{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+.filtre {
+	border-style: solid solid solid none;
+	border-color: grey;
+	border-width: 1px;
+	border-radius: 40%;
+	margin-left: 1rem;
+}
+.filtre i {
+	padding: 1rem;
+	font-size: 1rem;
+	color:#0065fc;
+	background-color: #deebff;
+	border : none;
+	border-radius: 50%;
+	text-align: center;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    body {
+        background-color: red;
+    }
+}
+          
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    body {
+        background-color: yellow;
+	}
+}
+          
+/* Media Query for Tablets Ipads portrait mode */
+    @media (min-width: 768px) and (max-width: 1024px){
+        body {
+            background-color: blue;
+        }
+}
+          
+/* Media Query for Laptops and Desktops */
+    @media (min-width: 1025px){
+        body {
+            /*background-color: green;*/
+        }
+}
