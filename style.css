@@ -31,6 +31,8 @@ ul{
 a {
 	text-decoration: inherit;
 	color: inherit;
+	margin: 0;
+	padding: 0;
 }
 
 .blue{
@@ -292,13 +294,15 @@ footer{
 		display: flex;
 		flex-direction: column;
 	}
+	#flex_populaire a{
+		width: 90%;
+	}
 	.cadre_populaire{
 		display: flex;
 		padding: 5px;
 		background-color: white;
 		border-radius: 20px;
 		margin-bottom: 1rem;
-		width: 90%;
 	}
 	.cadre_populaire img{
 		border-radius: 20px 0 0 20px;
@@ -328,7 +332,7 @@ footer{
 		margin-bottom: 1rem;
 	}
 
-	#activites .cadre_activite img{
+	.cadre_activite img{
 		max-height: 8rem;
 		max-width: 27rem;
 		object-fit: cover; 
@@ -395,8 +399,10 @@ footer{
 		#flex_hebergement h3{
 			margin:1rem 0 0 0;
 		}
+		#flex_hebergement a{
+			margin-bottom: 3rem;
+		}
 		.cadre_hebergement{
-			margin: 3rem 0;
 			padding: 5px;
 			display: flex;
 			flex-direction: column;
@@ -451,9 +457,8 @@ footer{
 
 		.cadre_activite{
 			width: 20vw;
-			/* background-color: red; */
 		}
-		#activites > .cadre_activite img{
+		#activites > a > .cadre_activite img{
 			width: 20vw;
 			height: 24vw;
 		}
@@ -463,7 +468,15 @@ footer{
 			flex-direction: column;
 			justify-content: space-between;
 		}
-		.lg_activites_col .cadre_activite:first-child img{
+		.lg_activites_col a:first-child img{
+			width: 20vw;
+			height: 11.2vw;
+		}
+		.lg_activites_col a:last-child img{
+			width: 20vw;
+			height: 6.4vw;
+		}
+		/* .lg_activites_col .cadre_activite:first-child img{
 			width: 20vw;
 			height: 11.2vw;
 		}
@@ -471,7 +484,7 @@ footer{
 		.lg_activites_col .cadre_activite:last-child img{
 			width: 20vw;
 			height: 6.4vw;
-		}
+		} */
 		
 		.lg_footer_row{
 			display: flex;
