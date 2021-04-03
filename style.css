@@ -345,17 +345,93 @@ footer{
 }
           
 /* Media Query for low resolution  Tablets, Ipads */
-@media (min-width: 481px) and (max-width: 767px) {
-    body {
-        background-color: yellow;
-	}
-}
-          
-/* Media Query for Tablets Ipads portrait mode */
-    @media (min-width: 768px) and (max-width: 1024px){
-        body {
-            background-color: blue;
-        }
+@media (min-width: 481px) and (max-width: 1024px) {
+		#menu_sm{
+			display: none;
+		}
+		#d_filtres label{
+			margin-right: 100%;
+		}
+		#d_filtres button {
+			margin: 1rem 1rem 0 0;
+		}
+		#d_hebergement{
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+		}
+
+		#d_ville{
+			order: 2;
+			background-color: #f2f2f2;
+			border-radius: 0;
+		}
+		#d_populaire{
+			order: 1;
+			margin: 0 5%;
+		}
+
+		#flex_hebergement{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: space-around;
+			margin: 0 5%;
+			margin-top: 2rem;
+		}
+		.cadre_hebergement{
+			padding: 5px;
+			display: flex;
+			flex-direction: column;
+			background-color: white;
+			width: 30vw;
+			border-radius: 20px;
+			margin-bottom: 2rem;
+		}
+		.cadre_hebergement img{
+			border-radius: 20px 20px 0 0;
+			width: 30vw;
+			height: 20vw;
+			min-height: 134px;
+			object-fit: cover; 
+			flex-shrink: 0;
+		}
+		#d_ville h1,h4{
+			text-align: center;
+		}
+		.cadre_populaire{
+			display: flex;
+			padding: 5px;
+			background-color: white;
+			border-radius: 20px;
+			margin-bottom: 1.5rem;
+		}
+		.description_populaire > h3{
+			font-size: 1.5rem;
+		}
+		.description_populaire > p{
+			font-size: 1.2rem;
+		}
+		.description_populaire > .stars{
+			font-size: 1.2rem;
+		}
+		.cadre_populaire img{
+			border-radius: 20px 0 0 20px;
+			width: 30vw;
+			height: 30vw;
+			object-fit: cover;
+			flex-shrink: 0;
+			margin-right: 1rem;
+		}
+		.cadre_activite {
+			margin-bottom: 1.5rem;
+		}
+	
+		.cadre_activite img{
+			height: 25vw;
+			width: 90vw;
+			object-fit: cover; 
+		}
 }
           
 /* Media Query for Laptops and Desktops */
@@ -394,7 +470,7 @@ footer{
 			flex-direction: row;
 			flex-wrap: wrap;
 			justify-content: space-between;
-
+			margin-top: 2rem;
 		}
 		#flex_hebergement h3{
 			margin:1rem 0 0 0;
@@ -475,17 +551,7 @@ footer{
 		.lg_activites_col a:last-child img{
 			width: 20vw;
 			height: 6.4vw;
-		}
-		/* .lg_activites_col .cadre_activite:first-child img{
-			width: 20vw;
-			height: 11.2vw;
-		}
-
-		.lg_activites_col .cadre_activite:last-child img{
-			width: 20vw;
-			height: 6.4vw;
-		} */
-		
+		}		
 		.lg_footer_row{
 			display: flex;
 			flex-direction: row;
