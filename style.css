@@ -89,7 +89,7 @@ nav ul{
 	display: flex;
 	flex-direction: row;
 }
-#research i{
+#research > i{
 	background-color: #f2f2f2;
 	padding: 1rem;
 	border: none;
@@ -111,6 +111,10 @@ nav ul{
 	border-style: none;
 	padding: 1rem;
 	border-radius: 0 20% 20% 0;
+}
+#sm_research_btn{
+	display: none;
+	padding: 0;
 }
 
 #d_filtres{
@@ -140,6 +144,15 @@ nav ul{
 	border : none;
 	border-radius: 50%;	
 }
+
+#d_filtres button:hover{
+	background-color: #0065fc;
+	color: white;
+}
+#d_filtres button:hover > i{
+	background-color: white;
+}
+
 #d_filtres button:nth-child(2) i{
 	padding: 14px 12px;
 }
@@ -252,12 +265,18 @@ footer{
 
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
-    body {
-        /*background-color: red;*/
-    }
+
 	#menu_lg ul li:nth-child(-n + 2) {
 		display: none;
 	}
+	
+	#lg_research_btn{
+		display: none;
+	}
+	#sm_research_btn{
+		display: inherit;
+	}
+
 	#d_filtres label{
 		margin-right: 100%;
 	}
